@@ -12,7 +12,7 @@ Diet YAML is a light weight version of YAML that removes much of the complex asp
 
 The EBNF looks something like this (still a work in progress):
 
-```ebnf
+```bnf
 YAML ::= Data*
 Data ::= (Scalar | Sequence | Mapping )
 Scalar ::= (Number | String | Date | Boolean | Nil)
