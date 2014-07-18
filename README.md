@@ -13,7 +13,9 @@ Diet YAML is a light weight version of YAML that removes much of the complex asp
 The EBNF looks something like this (still a work in progress):
 
 ```bnf
-YAML ::= Data*
+YAML ::= Start Data End
+Start ::= ( "\n---" | "" )
+End ::= ( "\n..." | "\n---" | "" )
 Data ::= (Scalar | Sequence | Mapping )
 Scalar ::= (Number | String | Date | Boolean | Nil)
 Sequence ::= ( "[" Data ("," Data)* "]" | OptionalTab "-" Data ("\n" OptionalTab "-" Data)* )
@@ -27,4 +29,3 @@ Boolean ::= "true" | "false"
 Nil ::= "~"
 Space ::= " "
 ```
-
