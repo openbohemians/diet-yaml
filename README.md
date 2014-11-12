@@ -5,7 +5,7 @@ Diet YAML is a light weight version of YAML that removes much of the complex asp
 
 * No declarations.
 * No type notation, only implicit core types are supported.
-* Mapping keys must alwasy be scalar.
+* Mapping keys must always be scalar.
 * Anchors and merging are optional.
 
 # EBNF
